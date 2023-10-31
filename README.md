@@ -1,1 +1,3 @@
-tst
+### necessary extensions
+- Jupyter
+- Python
