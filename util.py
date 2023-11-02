@@ -1,15 +1,9 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import GridSearchCV
 import time
 
-# Splits the data in a predictable manner (seded for constant comparison)
+# Splits the data in a predictable manner (seeded for constant comparison)
 # then return metrics and an evaluation of that classifier's performance
 
 
@@ -32,3 +26,24 @@ def evaluate_classifier(cls, data, target):
     }
 
     return report
+
+
+def compare_classifiers(classifiers, data, target, clf_names=None):
+    metrics = []
+    desc = []
+    for i, clf in enumerate(classifiers):
+        clf_name = clf_names[i] if clf_names else None
+        cls_name = clf.__class__.__name__
+        clf_params = clf.get_params()
+        clf_desc = f'{clf_name}\n{cls_name} with params {clf_params}'
+
+        metrics += [evaluate_classifier(clf, data, target)]
+        desc += [clf_desc]
+
+    for i in range(len(desc)):
+        t = metrics[i]
+
+        print(f"\n{desc[i]}")
+        print(f'train_time: {t["train_time"]}, classification report: \n{
+              t["classification_report"]}')
+        print(f'performance: {t['performance']}')
