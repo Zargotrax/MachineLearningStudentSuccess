@@ -1,0 +1,35 @@
+{"État civil": {"1": "Célibataire", "2": "Marié(e)", "3": "Veuf", "4": "Divorcé(e)", "5": "Union de fait", "6": "Séparés légalement"},
+ 
+ "Mode d'application": {"1": "1ère phase", "2": "2e phase", "3": "3e phase", "4": "Titulaire diplôme (bacc, maîtrise, doc)", "5": "Diplôme spécialisation/technologique", "6": "Diplôme cycle court", "7": "Transfert", "8": "Changement d'établissement/cours", "9": "Ordonnance", "10": "Étudiant international (baccalauréat)", "11": "Plus de 23 ans"},
+ 
+ "Cours": {"1": "Technologies de production de biocarburants", "2": "Conception d'animation et multimédia", "3": "Agronomie", "4": "Conception de communications", "5": "Soins infirmiers vétérinaires", "6": "Génie informatique", "7": "Équiniculture", "8": "Gestion", "9": "Service social", "10": "Tourisme", "11": "Soins infirmier", "12": "Hygiène buccale (Dentiste ou Hygiéniste dentaire)", "13": "Gestion de la publicité et du marketing", "14": "Journalisme et communication", "15": "Éducation de base"},
+ 
+ "Présence jour/soir": {"0": "Soir", "1": "Jour"},
+ 
+ "Qualification antérieure": {"1": "Étude supérieure – doctorat", "2": "Étude supérieure – maîtrise", "3": "Étude supérieure – baccalauréat", "4": "Étude supérieure – diplôme", "5": "Fréquence d'étude supérieure", "6": "Cours spécialisation/technique", "7": "Étude secondaire – 12e année de scolarité ou équivalent", "8": "Éducation de base"},
+ 
+ "Nationalité": {"1": "Portugais", "2": "Allemand", "3": "Espagnol", "4": "Italien", "5": "Néerlandais", "6": "Anglais (UK)", "7": "Lituanien", "8": "Angolais", "9": "Cap-Verdien", "10": "Guinéen", "11": "Mozambicain", "12": "Santoméen", "13": "Turc", "14": "Brésilien", "15": "Roumain", "16": "Moldavie (République de)", "17": "Mexicain", "18": "Ukrainien", "19": "Russe", "20": "Cubain", "21": "Colombien"},
+ 
+ "Qualification mère": {"1": "Étude supérieure – doctorat", "2": "Étude supérieure – maîtrise", "3": "Étude supérieure – baccalauréat", "4": "Étude supérieure – diplôme", "5": "Fréquence d'étude supérieure", "6": "Cours spécialisation/technique", "7": "Cours administration/commerce", "8": "Étude secondaire", "9": "Cours complémentaires",  "10": "Éducation de base", "11": "Aucune éducation", "12": "Inconnu"},
+ 
+ "Qualification père": {"1": "Étude supérieure – doctorat", "2": "Étude supérieure – maîtrise", "3": "Étude supérieure – baccalauréat", "4": "Étude supérieure – diplôme", "5": "Fréquence d'étude supérieure", "6": "Cours spécialisation/technique", "7": "Cours administration/commerce", "8": "Étude secondaire", "9": "Cours complémentaires",  "10": "Éducation de base", "11": "Aucune éducation", "12": "Inconnu"},
+ 
+ "Occupation mère": {"1": "Étudiant", "2": "Représentants du Pouvoir Législatif et des Organes Exécutifs, Directeurs et Dirigeants Exécutifs", "3": "Spécialistes en activités intellectuelles et scientifiques", "4": "Techniciens et professions de niveau intermédiaire", "5": "Personnel administratif", "6": "Travailleurs des services personnels, de la sécurité et de la sûreté et vendeurs", "7": "Agriculteurs et travailleurs qualifiés de l’agriculture, des pêches et des forêts", "8": "Ouvriers qualifiés de l’industrie, de la construction et des artisans", "9": "Opérateurs d'installations, de machines et ouvriers d'assemblage", "10": "Travailleurs sans compétences", "11": "Métiers des Forces armées", "12": "Autre situation", "13": "(vide)", "14": "Directeurs des services administratifs et commerciaux", "15": "Professionnels de la santé", "16": "Enseignants", "17": "Spécialistes en finance, comptabilité, organisation administrative et relations publiques et commerciales", "18": "Personnel de soutien administratif", "19": "Assistants à la préparation des repas", "20": "Vendeurs de rue (sauf nourriture) et prestataires de services de rue"},
+ 
+ "Occupation père": {"1": "Étudiant", "2": "Représentants du Pouvoir Législatif et des Organes Exécutifs, Directeurs et Dirigeants Exécutifs", "3": "Spécialistes en activités intellectuelles et scientifiques", "4": "Techniciens et professions de niveau intermédiaire", "5": "Personnel administratif", "6": "Travailleurs des services personnels, de la sécurité et de la sûreté et vendeurs", "7": "Agriculteurs et travailleurs qualifiés de l’agriculture, des pêches et des forêts", "8": "Ouvriers qualifiés de l’industrie, de la construction et des artisans", "9": "Opérateurs d'installations, de machines et ouvriers d'assemblage", "10": "Travailleurs sans compétences", "11": "Métiers des Forces armées", "12": "Autre situation", "13": "(vide)", "14": "Directeurs des services administratifs et commerciaux", "15": "Professionnels de la santé", "16": "Enseignants", "17": "Spécialistes en finance, comptabilité, organisation administrative et relations publiques et commerciales", "18": "Personnel de soutien administratif", "19": "Assistants à la préparation des repas", "20": "Vendeurs de rue (sauf nourriture) et prestataires de services de rue"},
+ 
+ "Déplacé": {"0": "Non", "1": "Oui"},
+ 
+ "Besoins éducatifs spéciaux": {"0": "Non", "1": "Oui"},
+ 
+ "Dettes": {"0": "Non", "1": "Oui"},
+ 
+ "Frais de scolarité à jour": {"0": "Non", "1": "Oui"},
+ 
+ "Sexe": {"0": "Femme", "1": "Homme"},
+ 
+ "Bourse": {"0": "Non", "1": "Oui"},
+ 
+ "International": {"0": "Non", "1": "Oui"},
+ 
+ "Cible": {"0": "Abandonné", "1": "Gradué"}}
