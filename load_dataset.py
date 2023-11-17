@@ -379,13 +379,17 @@ class load_data():
 
         X = df.drop(["Cible"], axis=1)
         y = df["Cible"]  
+
+        columns = X.columns
         
         if Scaler == 'MinMax':
             scaler = MinMaxScaler().fit(X)
             X = scaler.transform(X)
+            X = pd.DataFrame(X, columns=columns)
         elif Scaler == 'Standard':
             scaler = StandardScaler().fit(X)
             X = scaler.transform(X)
+            X = pd.DataFrame(X, columns=columns)
 
         return X, y, cat_feat
         
