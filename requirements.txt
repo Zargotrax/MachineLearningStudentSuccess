@@ -5,4 +5,9 @@ seaborn>=0.13.0
 jupyter_client>=8.5.0
 jupyter_core>=5.5.0
 shap==0.43.0
+six==1.16.0
 sklearn>=0.0.post10
+PyYAML==5.3.1
+catboost==1.2.2 
+ipykernel==6.26.0
+xgboost==2.0.2
