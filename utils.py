@@ -72,12 +72,13 @@ def heatmap(donnee):
 def conf_matrix(true, preds):
     matrice_confusion = confusion_matrix(y_true=true, y_pred=preds)
     # Créer un Heatmap
-    plt.figure(figsize=(25, 10))
-    sns.heatmap(matrice_confusion, annot=True, cmap='Blues', fmt="d", cbar=False, xticklabels=[
+    plt.figure(figsize=(20, 20))
+    sns.set(font_scale=3)
+    sns.heatmap(matrice_confusion, annot=True, cmap='coolwarm', fmt="d", cbar=False, xticklabels=[
                 'Classe 0', 'Classe 1'], yticklabels=['Classe 0', 'Classe 1'])
     plt.xlabel('Prédiction')
     plt.ylabel('Vrai')
-    plt.title('Matrice de confusion')
+    #plt.title('Matrice de confusion')
     plt.show()
 
 
@@ -128,7 +129,7 @@ def get_mean_impact_shap_category(shap_values, X_train, category):
         donnee_info = json.load(openfile)
 
     for cat_val in np.unique(data):
-        mean_shap_values.append(values[np.where(data == cat_val)].mean())
+        mean_shap_values.append((values[np.where(data == cat_val)].mean()))
         value_names.append(donnee_info[category][str(int(cat_val))])
 
     print(
