@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import time
-from load_dataset import load_data
+from data.load_dataset import load_data
 from matplotlib import rcParams
 
 rcParams['figure.figsize'] = 12, 9
@@ -78,7 +78,7 @@ def conf_matrix(true, preds):
                 'Classe 0', 'Classe 1'], yticklabels=['Classe 0', 'Classe 1'])
     plt.xlabel('Prédiction')
     plt.ylabel('Vrai')
-    #plt.title('Matrice de confusion')
+    # plt.title('Matrice de confusion')
     plt.show()
 
 
@@ -208,7 +208,7 @@ def add_model_feature_importances(clf, features):
     # Read the existing CSV file or create an empty DataFrame if the file doesn't exist
     header = None
     try:
-        df_existing = pd.read_csv("./compil/features_importance.csv")
+        df_existing = pd.read_csv("features_importance.csv")
         header = df_existing.columns.tolist()
     except FileNotFoundError:
         df_existing = pd.DataFrame(columns=header)
@@ -232,5 +232,5 @@ def add_model_feature_importances(clf, features):
     df = pd.concat([df_existing, new_row], ignore_index=True)
 
     # Save the DataFrame to the CSV file and close the file
-    df.to_csv("./compil/features_importance.csv", index=False)
+    df.to_csv("features_importance.csv", index=False)
     print("File features_importances.csv has been updated and saved.")
